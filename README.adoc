@@ -1,0 +1,9 @@
+== Sample source code for handling some sale entries
+This is a sandbox repository solving a problem oh handling some sale entries in a creative way.
+Uses JUnit 5 for testing.
+
+== Building and Deploying
+This is a Gradle multi-module project. Build it from scratch using:
+----
+gradle clean build
+----
