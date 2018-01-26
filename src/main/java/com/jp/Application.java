@@ -5,7 +5,7 @@ import com.jp.base.MessageType;
 import com.jp.ex.MessageException;
 import com.jp.util.MessageGenerator;
 import com.jp.util.MessageProcessor;
-import com.jp.util.SalesDB;
+import com.jp.util.SalesDao;
 
 
 /**
@@ -17,7 +17,7 @@ public class Application {
     public static void main(String... args) {
 
         MessageGenerator mg = new MessageGenerator();
-        MessageProcessor mp = new MessageProcessor(new SalesDB());
+        MessageProcessor mp = new MessageProcessor(new SalesDao());
 
         int mtVal = 12;
         for (int i = 0; i < mtVal; i++) {

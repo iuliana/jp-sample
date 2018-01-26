@@ -11,8 +11,9 @@ import java.util.Map;
 
 /**
  * Created by iuliana.grajdeanu on 1/26/18.
+ * Description: this is equivalent to a DAO class. The database is represented by the {code container} map.
  */
-public class SalesDB {
+public class SalesDao {
     private int saleCount = 0;
     private Map<ProductType, List<Sale>> container = new HashMap<>();
     private Map<ProductType, List<String>> adjustements = new HashMap<>();
@@ -96,6 +97,10 @@ public class SalesDB {
         return adjustements;
     }
 
+    /**
+     * needed only for testing that the implementation of the mock database and DAO logic works as expected
+     * @return the total values of sales in the {code container} map
+     */
     public int getTotal() {
         int total[] = new int[1];
         container.values().forEach(v -> {

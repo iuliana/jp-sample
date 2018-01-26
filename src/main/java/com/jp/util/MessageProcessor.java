@@ -1,7 +1,6 @@
 package com.jp.util;
 
 import com.jp.base.Message;
-import com.jp.base.MessageType;
 import com.jp.base.Sale;
 import com.jp.ex.MessageException;
 
@@ -10,9 +9,9 @@ import com.jp.ex.MessageException;
  */
 public class MessageProcessor {
 
-    SalesDB db;
+    SalesDao db;
 
-    public MessageProcessor(SalesDB db) {
+    public MessageProcessor(SalesDao db) {
         this.db = db;
     }
 
